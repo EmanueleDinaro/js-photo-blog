@@ -32,8 +32,9 @@ header{
     justify-content: center;
     align-items: center;
     background-image: url('../img/wall.png');
+    background-size: cover;
     position: sticky;
-    z-index: 69;
+    z-index: 20;
     top: 0;
     left: 0;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -49,6 +50,9 @@ h1{
 
 main{
     background-image: url('../img/cork.png');
+    background-size: contain;
+    padding-top: 40px;
+    height: 100vh;
 }
 
 .row{
@@ -62,12 +66,20 @@ main{
     position: relative;
     padding: 10px;
     background-color: #fff;
-    margin: 10px 10px 10px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 10px 10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
 }
 
 .img-fluid{
     max-width: 100%;
     top: 0;
     left: 0;
+}
+
+.pin-card{
+    width: 50px;
+    z-index: 10;
+    position: absolute;
+    top: -15px;
+    right: calc(100% / 2 - 25px);
 }

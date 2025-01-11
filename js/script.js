@@ -29,8 +29,9 @@ axios.get('https://jsonplaceholder.typicode.com/photos?_limit=6')
         postCard.addEventListener("click", () => {
             const urlImg = postCard.querySelector(".img-fluid").src;
             overlayElm.classList.remove("hidden");
-            overlayElm.innerHTML = `<button id="overlay-img-btn">Chiudi</button>
-                                    <img class="overlay-img" src="${urlImg}" alt="">`;
+            overlayElm.innerHTML = 
+                `<button id="overlay-img-btn">Chiudi</button>
+                <img class="overlay-img" src="${urlImg}" alt="">`;
 
             const overlayBtnElm = document.getElementById("overlay-img-btn");
             overlayBtnElm.addEventListener("click", function() {

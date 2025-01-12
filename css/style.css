@@ -51,6 +51,9 @@ h1{
 main{
     background-image: url('../img/cork.png');
     background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    height: 100vh;
 }
 
 .row{
@@ -61,6 +64,7 @@ main{
 
 .col {
     width: calc(100% / 3 - 10px);
+    height: 350px;
     position: relative;
     padding: 10px;
     background-color: #fff;
@@ -122,4 +126,48 @@ main{
 
 .hidden{
     display: none;
+}
+
+/*----------------
+    RESPONSIVE
+    Mobile First
+------------------*/
+/* Responsive layout fino a 576px */
+@media (max-width: 576px) {
+    main {
+        background-size: contain;
+        height: auto;
+    }
+    
+    .col {
+        width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 40px;
+    }
+}
+
+/* Responsive layout da 576px a 880px */
+@media (min-width: 576px) and (max-width: 880px) {
+    main {
+        background-size: contain;
+        height: auto;
+    }
+
+    .col {
+        width: calc(100% / 2 - 40px);
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 40px;
+    }
+}
+
+/* Responsive layout superiori a 880px */
+@media (min-width: 880px) {
+    .col {
+        width: calc(100% / 3 - 40px);
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 40px;
+    }
 }

@@ -23,6 +23,21 @@
 }
 
 /*--------------
+    TYPOGRAPHY
+--------------*/
+.card-desc{
+    font-family: "Edu TAS Beginner", serif;
+}
+
+header h1 {
+    font-family: "Edu TAS Beginner", serif;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 70px;
+}
+
+/*--------------
     HEADER
 --------------*/
 
@@ -42,18 +57,17 @@ header{
 
 h1{
     text-align: center;
+    padding: 10px;
 }
 
 /*--------------
     MAIN
 --------------*/
 
-main{
+main {
+    display: flex;
     background-image: url('../img/cork.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: repeat;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .row{
@@ -64,7 +78,6 @@ main{
 
 .col {
     width: calc(100% / 3 - 10px);
-    height: 350px;
     position: relative;
     padding: 10px;
     background-color: #fff;
@@ -134,9 +147,17 @@ main{
 ------------------*/
 /* Responsive layout fino a 576px */
 @media (max-width: 576px) {
+    header h1 {
+        font-family: "Edu TAS Beginner", serif;
+        font-weight: 600;
+        font-style: normal;
+        text-transform: uppercase;
+        font-size: 40px;
+    }
+
     main {
         background-size: contain;
-        height: auto;
+        height: auto; 
     }
     
     .col {
@@ -147,11 +168,20 @@ main{
     }
 }
 
+
 /* Responsive layout da 576px a 880px */
 @media (min-width: 576px) and (max-width: 880px) {
+    header h1 {
+        font-family: "Edu TAS Beginner", serif;
+        font-weight: 600;
+        font-style: normal;
+        text-transform: uppercase;
+        font-size: 50px;
+    }
+
     main {
         background-size: contain;
-        height: auto;
+        height: auto; 
     }
 
     .col {
@@ -163,7 +193,7 @@ main{
 }
 
 /* Responsive layout superiori a 880px */
-@media (min-width: 880px) {
+@media (min-width: 880px) { 
     .col {
         width: calc(100% / 3 - 40px);
         margin-left: 20px;

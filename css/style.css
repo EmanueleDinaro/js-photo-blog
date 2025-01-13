@@ -112,7 +112,7 @@ main {
 
 .overlay {
     background-color: rgba(0, 0, 0, 0.7);
-    position: absolute;
+    position: fixed;
     z-index: 999;
     top: 0;
     left: 0;
